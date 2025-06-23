@@ -1,0 +1,219 @@
+2025-04-06 19:16:37.883050: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+use updated ingredient text metadata-N5K_rgbd_dish_updated.txt
+use randow 4:1 splits
+contrastive_weights_tvw_200_vfw_200,similarity_temperature=0.4,initial_lr=0.0005,image_size=256,num_epochs=100,batch_size=64,weight_decay=0.001,eta_min=1e-07,random_seed=42,image_size_before_CenterCrop=260,depth_clipping_flag=1
+Using device: cuda
+Loading metadata for 2576 dishes...
+
+Processing metadata: 0it [00:00, ?it/s]
+Processing metadata: 3224it [00:00, 45787.70it/s]
+Found 2576 dishes with nutrition and ingredient data
+Loading metadata for 644 dishes...
+
+Processing metadata: 0it [00:00, ?it/s]
+Processing metadata: 3224it [00:00, 109176.05it/s]
+Found 644 dishes with nutrition and ingredient data
+Train dataset size: 2576
+Test dataset size: 644
+Preloading training images...
+
+Training data:   0%|          | 0/41 [00:00<?, ?it/s]
+Training data:   2%|▏         | 1/41 [00:02<01:43,  2.59s/it]
+Training data:  10%|▉         | 4/41 [00:02<00:19,  1.91it/s]
+Training data:  15%|█▍        | 6/41 [00:04<00:21,  1.63it/s]
+Training data:  22%|██▏       | 9/41 [00:05<00:18,  1.70it/s]
+Training data:  29%|██▉       | 12/41 [00:06<00:10,  2.70it/s]
+Training data:  34%|███▍      | 14/41 [00:07<00:13,  1.99it/s]
+Training data:  39%|███▉      | 16/41 [00:07<00:09,  2.63it/s]
+Training data:  41%|████▏     | 17/41 [00:09<00:13,  1.79it/s]
+Training data:  44%|████▍     | 18/41 [00:09<00:11,  2.05it/s]
+Training data:  49%|████▉     | 20/41 [00:09<00:07,  2.97it/s]
+Training data:  51%|█████     | 21/41 [00:11<00:11,  1.81it/s]
+Training data:  54%|█████▎    | 22/41 [00:11<00:08,  2.14it/s]
+Training data:  59%|█████▊    | 24/41 [00:11<00:05,  3.09it/s]
+Training data:  61%|██████    | 25/41 [00:12<00:08,  1.84it/s]
+Training data:  63%|██████▎   | 26/41 [00:12<00:06,  2.18it/s]
+Training data:  68%|██████▊   | 28/41 [00:13<00:04,  3.00it/s]
+Training data:  71%|███████   | 29/41 [00:14<00:06,  1.85it/s]
+Training data:  73%|███████▎  | 30/41 [00:14<00:04,  2.23it/s]
+Training data:  78%|███████▊  | 32/41 [00:14<00:02,  3.02it/s]
+Training data:  80%|████████  | 33/41 [00:16<00:04,  1.85it/s]
+Training data:  83%|████████▎ | 34/41 [00:16<00:03,  2.24it/s]
+Training data:  88%|████████▊ | 36/41 [00:16<00:01,  2.95it/s]
+Training data:  90%|█████████ | 37/41 [00:17<00:02,  1.86it/s]
+Training data:  93%|█████████▎| 38/41 [00:18<00:01,  2.22it/s]
+Training data:  98%|█████████▊| 40/41 [00:18<00:00,  2.87it/s]
+Training data: 100%|██████████| 41/41 [00:18<00:00,  2.21it/s]
+Preloading test images...
+
+Test data:   0%|          | 0/11 [00:00<?, ?it/s]
+Test data:   9%|▉         | 1/11 [00:02<00:21,  2.15s/it]
+Test data:  45%|████▌     | 5/11 [00:03<00:04,  1.45it/s]
+Test data:  82%|████████▏ | 9/11 [00:05<00:01,  1.83it/s]
+Test data: 100%|██████████| 11/11 [00:05<00:00,  1.94it/s]
+
+All images preloaded!
+use values for WeightedMSELoss based on training set means
+/home/yif22003/miniconda3/envs/tf5/lib/python3.9/site-packages/transformers/modeling_utils.py:1589: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+Epoch 1/100 | Train Loss: 1999.1488 | MSE Loss: 572.5847 | Text-Visual Loss: 3.5740 | Visual-FLAVA Loss: 3.5589 | Test Loss: 377.4483 | LR: 0.000500
+GPU Memory: Allocated: 1713.02 MB | Reserved: 24688.00 MB | Max Allocated: 24188.19 MB
+Model saved with test loss: 377.4483
+Epoch 2/100 | Train Loss: 1669.0067 | MSE Loss: 376.6683 | Text-Visual Loss: 3.2298 | Visual-FLAVA Loss: 3.2319 | Test Loss: 292.2825 | LR: 0.000500
+Model saved with test loss: 292.2825
+Epoch 3/100 | Train Loss: 1534.8250 | MSE Loss: 283.5979 | Text-Visual Loss: 3.1130 | Visual-FLAVA Loss: 3.1432 | Test Loss: 171.3222 | LR: 0.000500
+Model saved with test loss: 171.3222
+Epoch 4/100 | Train Loss: 1421.1358 | MSE Loss: 191.2041 | Text-Visual Loss: 3.0502 | Visual-FLAVA Loss: 3.0995 | Test Loss: 123.9201 | LR: 0.000499
+Model saved with test loss: 123.9201
+Epoch 5/100 | Train Loss: 1372.2847 | MSE Loss: 154.8307 | Text-Visual Loss: 3.0113 | Visual-FLAVA Loss: 3.0760 | Test Loss: 114.6462 | LR: 0.000498
+Model saved with test loss: 114.6462
+Epoch 6/100 | Train Loss: 1339.0622 | MSE Loss: 132.0938 | Text-Visual Loss: 2.9803 | Visual-FLAVA Loss: 3.0546 | Test Loss: 121.1268 | LR: 0.000497
+Epoch 7/100 | Train Loss: 1314.4488 | MSE Loss: 118.7588 | Text-Visual Loss: 2.9439 | Visual-FLAVA Loss: 3.0346 | Test Loss: 91.1723 | LR: 0.000496
+Model saved with test loss: 91.1723
+Epoch 8/100 | Train Loss: 1285.9565 | MSE Loss: 101.4764 | Text-Visual Loss: 2.9119 | Visual-FLAVA Loss: 3.0105 | Test Loss: 74.8977 | LR: 0.000494
+Model saved with test loss: 74.8977
+Epoch 9/100 | Train Loss: 1264.0566 | MSE Loss: 89.5214 | Text-Visual Loss: 2.8784 | Visual-FLAVA Loss: 2.9943 | Test Loss: 81.2996 | LR: 0.000492
+Epoch 10/100 | Train Loss: 1243.9429 | MSE Loss: 77.1653 | Text-Visual Loss: 2.8551 | Visual-FLAVA Loss: 2.9788 | Test Loss: 62.0670 | LR: 0.000490
+Model saved with test loss: 62.0670
+Epoch 11/100 | Train Loss: 1233.7817 | MSE Loss: 72.5856 | Text-Visual Loss: 2.8366 | Visual-FLAVA Loss: 2.9694 | Test Loss: 67.2733 | LR: 0.000488
+Epoch 12/100 | Train Loss: 1227.9864 | MSE Loss: 69.5551 | Text-Visual Loss: 2.8243 | Visual-FLAVA Loss: 2.9679 | Test Loss: 64.5566 | LR: 0.000485
+Epoch 13/100 | Train Loss: 1210.9429 | MSE Loss: 57.7944 | Text-Visual Loss: 2.8080 | Visual-FLAVA Loss: 2.9578 | Test Loss: 55.8853 | LR: 0.000482
+Model saved with test loss: 55.8853
+Epoch 14/100 | Train Loss: 1198.0748 | MSE Loss: 53.4048 | Text-Visual Loss: 2.7813 | Visual-FLAVA Loss: 2.9421 | Test Loss: 53.8582 | LR: 0.000479
+Model saved with test loss: 53.8582
+Epoch 15/100 | Train Loss: 1201.4096 | MSE Loss: 58.4553 | Text-Visual Loss: 2.7783 | Visual-FLAVA Loss: 2.9365 | Test Loss: 83.9867 | LR: 0.000476
+Epoch 16/100 | Train Loss: 1194.9227 | MSE Loss: 54.4699 | Text-Visual Loss: 2.7707 | Visual-FLAVA Loss: 2.9316 | Test Loss: 45.5985 | LR: 0.000473
+Model saved with test loss: 45.5985
+Epoch 17/100 | Train Loss: 1182.7426 | MSE Loss: 47.8114 | Text-Visual Loss: 2.7511 | Visual-FLAVA Loss: 2.9236 | Test Loss: 50.6796 | LR: 0.000469
+Epoch 18/100 | Train Loss: 1178.8130 | MSE Loss: 48.4570 | Text-Visual Loss: 2.7382 | Visual-FLAVA Loss: 2.9136 | Test Loss: 53.0984 | LR: 0.000465
+Epoch 19/100 | Train Loss: 1174.3822 | MSE Loss: 45.0664 | Text-Visual Loss: 2.7339 | Visual-FLAVA Loss: 2.9127 | Test Loss: 44.8884 | LR: 0.000461
+Model saved with test loss: 44.8884
+Epoch 20/100 | Train Loss: 1167.0501 | MSE Loss: 41.6780 | Text-Visual Loss: 2.7242 | Visual-FLAVA Loss: 2.9027 | Test Loss: 43.1845 | LR: 0.000457
+Model saved with test loss: 43.1845
+Epoch 21/100 | Train Loss: 1161.6117 | MSE Loss: 40.1586 | Text-Visual Loss: 2.7113 | Visual-FLAVA Loss: 2.8959 | Test Loss: 47.5991 | LR: 0.000452
+Epoch 22/100 | Train Loss: 1155.0027 | MSE Loss: 36.3350 | Text-Visual Loss: 2.7066 | Visual-FLAVA Loss: 2.8868 | Test Loss: 42.6617 | LR: 0.000448
+Model saved with test loss: 42.6617
+Epoch 23/100 | Train Loss: 1151.0116 | MSE Loss: 33.3334 | Text-Visual Loss: 2.7021 | Visual-FLAVA Loss: 2.8863 | Test Loss: 37.0235 | LR: 0.000443
+Model saved with test loss: 37.0235
+Epoch 24/100 | Train Loss: 1144.9347 | MSE Loss: 32.0814 | Text-Visual Loss: 2.6864 | Visual-FLAVA Loss: 2.8779 | Test Loss: 41.2949 | LR: 0.000438
+Epoch 25/100 | Train Loss: 1143.1129 | MSE Loss: 32.3320 | Text-Visual Loss: 2.6800 | Visual-FLAVA Loss: 2.8739 | Test Loss: 36.9345 | LR: 0.000432
+Model saved with test loss: 36.9345
+Epoch 26/100 | Train Loss: 1139.0672 | MSE Loss: 32.3936 | Text-Visual Loss: 2.6697 | Visual-FLAVA Loss: 2.8637 | Test Loss: 36.6890 | LR: 0.000427
+Model saved with test loss: 36.6890
+Epoch 27/100 | Train Loss: 1136.5834 | MSE Loss: 29.2429 | Text-Visual Loss: 2.6725 | Visual-FLAVA Loss: 2.8642 | Test Loss: 37.3465 | LR: 0.000421
+Epoch 28/100 | Train Loss: 1133.8756 | MSE Loss: 28.2977 | Text-Visual Loss: 2.6670 | Visual-FLAVA Loss: 2.8608 | Test Loss: 33.1009 | LR: 0.000415
+Model saved with test loss: 33.1009
+Epoch 29/100 | Train Loss: 1130.6973 | MSE Loss: 27.7411 | Text-Visual Loss: 2.6611 | Visual-FLAVA Loss: 2.8537 | Test Loss: 32.9346 | LR: 0.000409
+Model saved with test loss: 32.9346
+Epoch 30/100 | Train Loss: 1129.9525 | MSE Loss: 28.7114 | Text-Visual Loss: 2.6564 | Visual-FLAVA Loss: 2.8498 | Test Loss: 34.8131 | LR: 0.000403
+Epoch 31/100 | Train Loss: 1125.6346 | MSE Loss: 26.9532 | Text-Visual Loss: 2.6479 | Visual-FLAVA Loss: 2.8455 | Test Loss: 32.4539 | LR: 0.000397
+Model saved with test loss: 32.4539
+Epoch 32/100 | Train Loss: 1126.1408 | MSE Loss: 26.6778 | Text-Visual Loss: 2.6499 | Visual-FLAVA Loss: 2.8474 | Test Loss: 34.5628 | LR: 0.000391
+Epoch 33/100 | Train Loss: 1123.1055 | MSE Loss: 26.8615 | Text-Visual Loss: 2.6435 | Visual-FLAVA Loss: 2.8377 | Test Loss: 32.2340 | LR: 0.000384
+Model saved with test loss: 32.2340
+Epoch 34/100 | Train Loss: 1121.3435 | MSE Loss: 25.3931 | Text-Visual Loss: 2.6422 | Visual-FLAVA Loss: 2.8376 | Test Loss: 30.3174 | LR: 0.000377
+Model saved with test loss: 30.3174
+Epoch 35/100 | Train Loss: 1121.1675 | MSE Loss: 24.8045 | Text-Visual Loss: 2.6454 | Visual-FLAVA Loss: 2.8364 | Test Loss: 31.9875 | LR: 0.000370
+Epoch 36/100 | Train Loss: 1119.7468 | MSE Loss: 26.0470 | Text-Visual Loss: 2.6365 | Visual-FLAVA Loss: 2.8320 | Test Loss: 31.3688 | LR: 0.000364
+Epoch 37/100 | Train Loss: 1118.4536 | MSE Loss: 25.3366 | Text-Visual Loss: 2.6365 | Visual-FLAVA Loss: 2.8291 | Test Loss: 32.7790 | LR: 0.000356
+Epoch 38/100 | Train Loss: 1114.6304 | MSE Loss: 22.6597 | Text-Visual Loss: 2.6330 | Visual-FLAVA Loss: 2.8268 | Test Loss: 30.7287 | LR: 0.000349
+Epoch 39/100 | Train Loss: 1111.1846 | MSE Loss: 21.5631 | Text-Visual Loss: 2.6261 | Visual-FLAVA Loss: 2.8220 | Test Loss: 29.4792 | LR: 0.000342
+Model saved with test loss: 29.4792
+Epoch 40/100 | Train Loss: 1111.4564 | MSE Loss: 21.7025 | Text-Visual Loss: 2.6283 | Visual-FLAVA Loss: 2.8205 | Test Loss: 30.7848 | LR: 0.000335
+Epoch 41/100 | Train Loss: 1110.9102 | MSE Loss: 21.9604 | Text-Visual Loss: 2.6278 | Visual-FLAVA Loss: 2.8170 | Test Loss: 31.3059 | LR: 0.000327
+Epoch 42/100 | Train Loss: 1108.8068 | MSE Loss: 22.6585 | Text-Visual Loss: 2.6184 | Visual-FLAVA Loss: 2.8124 | Test Loss: 32.3833 | LR: 0.000320
+Epoch 43/100 | Train Loss: 1107.3192 | MSE Loss: 21.2222 | Text-Visual Loss: 2.6204 | Visual-FLAVA Loss: 2.8101 | Test Loss: 27.9770 | LR: 0.000312
+Model saved with test loss: 27.9770
+Epoch 44/100 | Train Loss: 1105.6004 | MSE Loss: 20.4625 | Text-Visual Loss: 2.6170 | Visual-FLAVA Loss: 2.8087 | Test Loss: 28.5654 | LR: 0.000305
+Epoch 45/100 | Train Loss: 1103.9694 | MSE Loss: 19.6032 | Text-Visual Loss: 2.6139 | Visual-FLAVA Loss: 2.8080 | Test Loss: 32.6522 | LR: 0.000297
+Epoch 46/100 | Train Loss: 1102.7936 | MSE Loss: 20.2314 | Text-Visual Loss: 2.6113 | Visual-FLAVA Loss: 2.8015 | Test Loss: 28.3060 | LR: 0.000289
+Epoch 47/100 | Train Loss: 1101.5045 | MSE Loss: 18.8107 | Text-Visual Loss: 2.6100 | Visual-FLAVA Loss: 2.8034 | Test Loss: 29.9300 | LR: 0.000281
+Epoch 48/100 | Train Loss: 1101.7274 | MSE Loss: 19.5137 | Text-Visual Loss: 2.6111 | Visual-FLAVA Loss: 2.8000 | Test Loss: 28.4138 | LR: 0.000274
+Epoch 49/100 | Train Loss: 1099.4148 | MSE Loss: 18.8328 | Text-Visual Loss: 2.6057 | Visual-FLAVA Loss: 2.7972 | Test Loss: 27.6083 | LR: 0.000266
+Model saved with test loss: 27.6083
+Epoch 50/100 | Train Loss: 1099.8128 | MSE Loss: 18.3646 | Text-Visual Loss: 2.6095 | Visual-FLAVA Loss: 2.7977 | Test Loss: 29.4061 | LR: 0.000258
+Epoch 51/100 | Train Loss: 1097.9416 | MSE Loss: 17.9961 | Text-Visual Loss: 2.6058 | Visual-FLAVA Loss: 2.7939 | Test Loss: 27.8880 | LR: 0.000250
+Epoch 52/100 | Train Loss: 1097.3900 | MSE Loss: 17.6919 | Text-Visual Loss: 2.6029 | Visual-FLAVA Loss: 2.7956 | Test Loss: 29.5677 | LR: 0.000242
+Epoch 53/100 | Train Loss: 1096.9166 | MSE Loss: 18.9873 | Text-Visual Loss: 2.5991 | Visual-FLAVA Loss: 2.7906 | Test Loss: 26.1444 | LR: 0.000234
+Model saved with test loss: 26.1444
+Epoch 54/100 | Train Loss: 1095.4644 | MSE Loss: 17.5974 | Text-Visual Loss: 2.6000 | Visual-FLAVA Loss: 2.7893 | Test Loss: 26.7087 | LR: 0.000227
+Epoch 55/100 | Train Loss: 1096.7868 | MSE Loss: 18.6477 | Text-Visual Loss: 2.6021 | Visual-FLAVA Loss: 2.7886 | Test Loss: 27.3859 | LR: 0.000219
+Epoch 56/100 | Train Loss: 1095.6701 | MSE Loss: 17.0435 | Text-Visual Loss: 2.6020 | Visual-FLAVA Loss: 2.7911 | Test Loss: 27.4814 | LR: 0.000211
+Epoch 57/100 | Train Loss: 1093.2152 | MSE Loss: 17.0712 | Text-Visual Loss: 2.5976 | Visual-FLAVA Loss: 2.7832 | Test Loss: 28.1244 | LR: 0.000203
+Epoch 58/100 | Train Loss: 1092.6653 | MSE Loss: 16.4906 | Text-Visual Loss: 2.5964 | Visual-FLAVA Loss: 2.7844 | Test Loss: 28.9350 | LR: 0.000196
+Epoch 59/100 | Train Loss: 1091.6381 | MSE Loss: 16.3930 | Text-Visual Loss: 2.5952 | Visual-FLAVA Loss: 2.7810 | Test Loss: 27.3339 | LR: 0.000188
+Epoch 60/100 | Train Loss: 1092.1562 | MSE Loss: 16.2487 | Text-Visual Loss: 2.5993 | Visual-FLAVA Loss: 2.7803 | Test Loss: 28.3529 | LR: 0.000180
+Epoch 61/100 | Train Loss: 1090.3908 | MSE Loss: 16.7258 | Text-Visual Loss: 2.5911 | Visual-FLAVA Loss: 2.7773 | Test Loss: 25.7780 | LR: 0.000173
+Model saved with test loss: 25.7780
+Epoch 62/100 | Train Loss: 1089.7813 | MSE Loss: 16.3940 | Text-Visual Loss: 2.5891 | Visual-FLAVA Loss: 2.7778 | Test Loss: 25.6872 | LR: 0.000165
+Model saved with test loss: 25.6872
+Epoch 63/100 | Train Loss: 1088.5117 | MSE Loss: 15.7863 | Text-Visual Loss: 2.5902 | Visual-FLAVA Loss: 2.7734 | Test Loss: 24.8693 | LR: 0.000158
+Model saved with test loss: 24.8693
+Epoch 64/100 | Train Loss: 1087.5099 | MSE Loss: 15.5152 | Text-Visual Loss: 2.5869 | Visual-FLAVA Loss: 2.7730 | Test Loss: 25.7043 | LR: 0.000151
+Epoch 65/100 | Train Loss: 1087.2957 | MSE Loss: 16.0713 | Text-Visual Loss: 2.5856 | Visual-FLAVA Loss: 2.7705 | Test Loss: 28.2448 | LR: 0.000144
+Epoch 66/100 | Train Loss: 1087.9809 | MSE Loss: 15.7381 | Text-Visual Loss: 2.5898 | Visual-FLAVA Loss: 2.7714 | Test Loss: 26.3614 | LR: 0.000137
+Epoch 67/100 | Train Loss: 1087.8759 | MSE Loss: 15.6344 | Text-Visual Loss: 2.5884 | Visual-FLAVA Loss: 2.7728 | Test Loss: 25.7331 | LR: 0.000130
+Epoch 68/100 | Train Loss: 1087.0764 | MSE Loss: 15.2385 | Text-Visual Loss: 2.5867 | Visual-FLAVA Loss: 2.7725 | Test Loss: 25.4902 | LR: 0.000123
+Epoch 69/100 | Train Loss: 1085.2250 | MSE Loss: 14.9944 | Text-Visual Loss: 2.5829 | Visual-FLAVA Loss: 2.7683 | Test Loss: 26.2581 | LR: 0.000116
+Epoch 70/100 | Train Loss: 1085.2800 | MSE Loss: 15.3085 | Text-Visual Loss: 2.5824 | Visual-FLAVA Loss: 2.7675 | Test Loss: 25.0067 | LR: 0.000110
+Epoch 71/100 | Train Loss: 1086.4820 | MSE Loss: 15.1994 | Text-Visual Loss: 2.5864 | Visual-FLAVA Loss: 2.7700 | Test Loss: 26.6439 | LR: 0.000103
+Epoch 72/100 | Train Loss: 1085.1866 | MSE Loss: 15.5457 | Text-Visual Loss: 2.5817 | Visual-FLAVA Loss: 2.7665 | Test Loss: 25.7825 | LR: 0.000097
+Epoch 73/100 | Train Loss: 1083.2172 | MSE Loss: 14.2503 | Text-Visual Loss: 2.5802 | Visual-FLAVA Loss: 2.7647 | Test Loss: 25.3239 | LR: 0.000091
+Epoch 74/100 | Train Loss: 1084.2846 | MSE Loss: 14.3393 | Text-Visual Loss: 2.5830 | Visual-FLAVA Loss: 2.7668 | Test Loss: 25.2633 | LR: 0.000085
+Epoch 75/100 | Train Loss: 1083.0790 | MSE Loss: 14.1174 | Text-Visual Loss: 2.5805 | Visual-FLAVA Loss: 2.7643 | Test Loss: 25.0937 | LR: 0.000079
+Epoch 76/100 | Train Loss: 1084.7253 | MSE Loss: 14.5559 | Text-Visual Loss: 2.5871 | Visual-FLAVA Loss: 2.7638 | Test Loss: 25.7047 | LR: 0.000073
+Epoch 77/100 | Train Loss: 1083.4681 | MSE Loss: 14.0842 | Text-Visual Loss: 2.5833 | Visual-FLAVA Loss: 2.7636 | Test Loss: 24.7806 | LR: 0.000068
+Model saved with test loss: 24.7806
+Epoch 78/100 | Train Loss: 1082.3789 | MSE Loss: 14.3204 | Text-Visual Loss: 2.5777 | Visual-FLAVA Loss: 2.7626 | Test Loss: 25.6292 | LR: 0.000063
+Epoch 79/100 | Train Loss: 1081.2451 | MSE Loss: 13.5456 | Text-Visual Loss: 2.5774 | Visual-FLAVA Loss: 2.7611 | Test Loss: 26.3023 | LR: 0.000057
+Epoch 80/100 | Train Loss: 1080.1874 | MSE Loss: 13.2970 | Text-Visual Loss: 2.5757 | Visual-FLAVA Loss: 2.7587 | Test Loss: 25.1516 | LR: 0.000053
+Epoch 81/100 | Train Loss: 1081.9207 | MSE Loss: 13.4342 | Text-Visual Loss: 2.5815 | Visual-FLAVA Loss: 2.7609 | Test Loss: 25.2747 | LR: 0.000048
+Epoch 82/100 | Train Loss: 1081.3727 | MSE Loss: 13.5853 | Text-Visual Loss: 2.5798 | Visual-FLAVA Loss: 2.7591 | Test Loss: 25.0687 | LR: 0.000043
+Epoch 83/100 | Train Loss: 1081.6536 | MSE Loss: 13.4850 | Text-Visual Loss: 2.5817 | Visual-FLAVA Loss: 2.7592 | Test Loss: 25.7199 | LR: 0.000039
+Epoch 84/100 | Train Loss: 1080.7800 | MSE Loss: 12.8493 | Text-Visual Loss: 2.5796 | Visual-FLAVA Loss: 2.7601 | Test Loss: 25.5643 | LR: 0.000035
+Epoch 85/100 | Train Loss: 1079.9319 | MSE Loss: 13.2994 | Text-Visual Loss: 2.5753 | Visual-FLAVA Loss: 2.7579 | Test Loss: 25.5353 | LR: 0.000031
+Epoch 86/100 | Train Loss: 1079.8505 | MSE Loss: 13.2396 | Text-Visual Loss: 2.5760 | Visual-FLAVA Loss: 2.7570 | Test Loss: 25.1311 | LR: 0.000027
+Epoch 87/100 | Train Loss: 1080.2813 | MSE Loss: 13.2337 | Text-Visual Loss: 2.5769 | Visual-FLAVA Loss: 2.7584 | Test Loss: 25.5546 | LR: 0.000024
+Epoch 88/100 | Train Loss: 1080.3404 | MSE Loss: 12.8978 | Text-Visual Loss: 2.5793 | Visual-FLAVA Loss: 2.7579 | Test Loss: 25.3138 | LR: 0.000021
+Epoch 89/100 | Train Loss: 1080.0777 | MSE Loss: 12.6109 | Text-Visual Loss: 2.5791 | Visual-FLAVA Loss: 2.7583 | Test Loss: 25.0005 | LR: 0.000018
+Epoch 90/100 | Train Loss: 1080.0454 | MSE Loss: 12.5378 | Text-Visual Loss: 2.5795 | Visual-FLAVA Loss: 2.7580 | Test Loss: 24.8128 | LR: 0.000015
+Epoch 91/100 | Train Loss: 1079.4162 | MSE Loss: 13.2332 | Text-Visual Loss: 2.5752 | Visual-FLAVA Loss: 2.7557 | Test Loss: 25.0854 | LR: 0.000012
+Epoch 92/100 | Train Loss: 1079.3329 | MSE Loss: 13.1085 | Text-Visual Loss: 2.5745 | Visual-FLAVA Loss: 2.7566 | Test Loss: 25.2292 | LR: 0.000010
+Epoch 93/100 | Train Loss: 1078.9020 | MSE Loss: 12.5430 | Text-Visual Loss: 2.5754 | Visual-FLAVA Loss: 2.7564 | Test Loss: 25.2175 | LR: 0.000008
+Epoch 94/100 | Train Loss: 1077.6735 | MSE Loss: 12.4365 | Text-Visual Loss: 2.5714 | Visual-FLAVA Loss: 2.7548 | Test Loss: 24.8887 | LR: 0.000006
+Epoch 95/100 | Train Loss: 1078.9388 | MSE Loss: 12.7931 | Text-Visual Loss: 2.5746 | Visual-FLAVA Loss: 2.7561 | Test Loss: 25.1034 | LR: 0.000005
+Epoch 96/100 | Train Loss: 1079.6495 | MSE Loss: 13.4397 | Text-Visual Loss: 2.5753 | Visual-FLAVA Loss: 2.7557 | Test Loss: 24.7877 | LR: 0.000003
+Epoch 97/100 | Train Loss: 1077.9107 | MSE Loss: 12.5289 | Text-Visual Loss: 2.5723 | Visual-FLAVA Loss: 2.7546 | Test Loss: 24.7145 | LR: 0.000002
+Model saved with test loss: 24.7145
+Epoch 98/100 | Train Loss: 1078.2165 | MSE Loss: 12.6249 | Text-Visual Loss: 2.5739 | Visual-FLAVA Loss: 2.7541 | Test Loss: 24.7510 | LR: 0.000001
+Epoch 99/100 | Train Loss: 1079.5312 | MSE Loss: 12.6164 | Text-Visual Loss: 2.5786 | Visual-FLAVA Loss: 2.7560 | Test Loss: 24.7130 | LR: 0.000001
+Model saved with test loss: 24.7130
+/home/yif22003/generic_food/codes/0406_ablation_Full_Model.py:960: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  deployment_model.load_state_dict(torch.load(os.path.join(results_dir, 'best_model.pth')))
+Epoch 100/100 | Train Loss: 1078.5310 | MSE Loss: 13.1054 | Text-Visual Loss: 2.5722 | Visual-FLAVA Loss: 2.7549 | Test Loss: 24.7129 | LR: 0.000000
+Model saved with test loss: 24.7129
+Training history saved to /home/yif22003/generic_food/code_results/Ablation_studies/040625_Full_Model/training_history.csv
+
+Evaluating:   0%|          | 0/11 [00:00<?, ?it/s]
+Evaluating:   9%|▉         | 1/11 [00:02<00:20,  2.10s/it]
+Evaluating:  18%|█▊        | 2/11 [00:02<00:08,  1.04it/s]
+Evaluating:  27%|██▋       | 3/11 [00:02<00:04,  1.66it/s]
+Evaluating:  36%|███▋      | 4/11 [00:02<00:03,  2.32it/s]
+Evaluating:  45%|████▌     | 5/11 [00:03<00:04,  1.45it/s]
+Evaluating:  55%|█████▍    | 6/11 [00:03<00:02,  1.96it/s]
+Evaluating:  64%|██████▎   | 7/11 [00:04<00:01,  2.50it/s]
+Evaluating:  73%|███████▎  | 8/11 [00:04<00:00,  3.06it/s]
+Evaluating:  82%|████████▏ | 9/11 [00:05<00:01,  1.73it/s]
+Evaluating:  91%|█████████ | 10/11 [00:05<00:00,  2.22it/s]
+Evaluating: 100%|██████████| 11/11 [00:05<00:00,  1.94it/s]
+
+Evaluation Results:
+Nutrient   MAE        PMAE (%)   Mean Value
+--------------------------------------------------
+Calories   33.5487 13.80% 243.1784
+Mass       20.3513 9.91% 205.2966
+Fat        2.3383 18.89% 12.3784
+Carb       2.7222 14.62% 18.6201
+Protein    2.4977 14.95% 16.7038
+Average    12.2916 14.43%
